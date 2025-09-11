@@ -1,8 +1,11 @@
 import numpy as np
 from plyfile import PlyData, PlyElement
 
-input_path = 'sample.ply'
-output_path = 'output.ply'
+unity_assets_folder = os.getenv("PIPE_UNITY_ASSETS_FOLDER", "")
+#input_path = 'sample.ply'
+#output_path = 'output.ply'
+input_path = os.path.join(unity_assets_folder, "sample.ply")
+output_path = os.path.join(unity_assets_folder, "output.ply")
 
 # Read the original PLY file
 with open(input_path, 'rb') as f:

@@ -30,7 +30,8 @@ trellis_assets_folder = ENV("PIPE_TRELLIS_ASSETS_FOLDER", "")
 unity_assets_folder = ENV("PIPE_UNITY_ASSETS_FOLDER", "")
 conda_profile = ENV("PIPE_CONDA_PROFILE", "")
 # Derived config (depends on values defined via env variables in the main config section)
-ply_converter_script = os.path.join(unity_assets_folder, "ply_converter.py")
+#script_dir = os.path.dirname(os.path.abspath(__file__))
+ply_converter_script = os.path.join(PIPE_UNITY_ASSETS_FOLDER, "ply_converter.py")
 converter_output_name = ENV("PIPE_CONVERTER_OUTPUT_NAME", "output.ply")
 
 # How often (in seconds) the script checks for new files

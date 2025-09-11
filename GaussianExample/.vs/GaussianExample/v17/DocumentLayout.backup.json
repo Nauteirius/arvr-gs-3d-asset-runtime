@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\",
+  "WorkspaceRootPath": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\assets\\gaussianautoloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|solutionrelative:assets\\gaussianautoloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|c:\\stu\\gaussianexample\\gaussianexample\\gaussianexample\\assets\\rendertextureclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|solutionrelative:assets\\rendertextureclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|c:\\stu\\praca magisterska\\unitygaussiansplatting-main\\projects\\gaussianexample\\assets\\gaussiancreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\assets\\gaussiancreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|solutionrelative:assets\\gaussiancreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\assets\\vrscreencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C8B0FC8-98CB-B5E5-ABA5-3035DD21CBF3}|Assembly-CSharp.csproj|solutionrelative:assets\\vrscreencapture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86A86C68-ECC5-B10F-42BC-91E938B252D5}|GaussianSplatting.csproj|C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\packages\\package\\runtime\\utils\\gaussiansplatassetcreatetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86A86C68-ECC5-B10F-42BC-91E938B252D5}|GaussianSplatting.csproj|solutionrelative:packages\\package\\runtime\\utils\\gaussiansplatassetcreatetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +27,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GaussianAutoLoader.cs",
-              "DocumentMoniker": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\GaussianAutoLoader.cs",
-              "RelativeDocumentMoniker": "Assets\\GaussianAutoLoader.cs",
-              "ToolTip": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\GaussianAutoLoader.cs",
-              "RelativeToolTip": "Assets\\GaussianAutoLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "RenderTextureClass.cs",
+              "DocumentMoniker": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Assets\\RenderTextureClass.cs",
+              "RelativeDocumentMoniker": "Assets\\RenderTextureClass.cs",
+              "ToolTip": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Assets\\RenderTextureClass.cs",
+              "RelativeToolTip": "Assets\\RenderTextureClass.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T19:06:03.198Z",
+              "WhenOpened": "2025-09-11T18:15:10.084Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "test.cs",
-              "DocumentMoniker": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\test.cs",
-              "RelativeDocumentMoniker": "Assets\\test.cs",
-              "ToolTip": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\test.cs",
-              "RelativeToolTip": "Assets\\test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T17:23:37.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VRScreenCapture.cs",
-              "DocumentMoniker": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\VRScreenCapture.cs",
-              "RelativeDocumentMoniker": "Assets\\VRScreenCapture.cs",
-              "ToolTip": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\VRScreenCapture.cs",
-              "RelativeToolTip": "Assets\\VRScreenCapture.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T19:44:30.914Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "GaussianCreator.cs",
-              "DocumentMoniker": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\GaussianCreator.cs",
+              "DocumentMoniker": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Assets\\GaussianCreator.cs",
               "RelativeDocumentMoniker": "Assets\\GaussianCreator.cs",
-              "ToolTip": "C:\\stu\\praca magisterska\\UnityGaussianSplatting-main\\projects\\GaussianExample\\Assets\\GaussianCreator.cs",
+              "ToolTip": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Assets\\GaussianCreator.cs",
               "RelativeToolTip": "Assets\\GaussianCreator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwCAAAACoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T19:13:31.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T17:54:03.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GaussianSplatAssetCreateTask.cs",
+              "DocumentMoniker": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Packages\\package\\Runtime\\Utils\\GaussianSplatAssetCreateTask.cs",
+              "RelativeDocumentMoniker": "Packages\\package\\Runtime\\Utils\\GaussianSplatAssetCreateTask.cs",
+              "ToolTip": "C:\\stu\\GaussianExample\\GaussianExample\\GaussianExample\\Packages\\package\\Runtime\\Utils\\GaussianSplatAssetCreateTask.cs",
+              "RelativeToolTip": "Packages\\package\\Runtime\\Utils\\GaussianSplatAssetCreateTask.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAADgvxwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T17:52:55.724Z"
             }
           ]
         }

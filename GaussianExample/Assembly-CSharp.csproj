@@ -63,7 +63,14 @@
     <Compile Include="Assets\GaussianAutoLoader.cs" />
     <Compile Include="Assets\VRScreenCapture.cs" />
     <Compile Include="Assets\GaussianCreator.cs" />
-    <Compile Include="Assets\NewBehaviourScript1.cs" />
+    <Compile Include="Assets\RenderTextureClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Resources\chunk.txt" />
+    <None Include="Assets\Resources\other.txt" />
+    <None Include="Assets\Resources\sh.txt" />
+    <None Include="Assets\Resources\pos.txt" />
+    <None Include="Assets\Resources\color.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

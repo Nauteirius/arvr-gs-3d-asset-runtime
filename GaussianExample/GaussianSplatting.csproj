@@ -60,62 +60,26 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.47f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatRuntimeAsset.cs">
-      <Link>Runtime\GaussianSplatRuntimeAsset.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\GaussianFileReader.cs">
-      <Link>Runtime\Utils\GaussianFileReader.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\SPZFileReader.cs">
-      <Link>Runtime\Utils\SPZFileReader.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\TinyJsonParser.cs">
-      <Link>Runtime\Utils\TinyJsonParser.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\GaussianSplatAssetCreateTask.cs">
-      <Link>Runtime\Utils\GaussianSplatAssetCreateTask.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatAsset.cs">
-      <Link>Runtime\GaussianSplatAsset.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\Quality.cs">
-      <Link>Runtime\Utils\Quality.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GpuSorting.cs">
-      <Link>Runtime\GpuSorting.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatRenderer.cs">
-      <Link>Runtime\GaussianSplatRenderer.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\KMeansClustering.cs">
-      <Link>Runtime\Utils\KMeansClustering.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatRuntimeAssetCreator.cs">
-      <Link>Runtime\GaussianSplatRuntimeAssetCreator.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\Utils\PLYFileReader.cs">
-      <Link>Runtime\Utils\PLYFileReader.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianCutout.cs">
-      <Link>Runtime\GaussianCutout.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\IGaussianSplatAsset.cs">
-      <Link>Runtime\IGaussianSplatAsset.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatURPFeature.cs">
-      <Link>Runtime\GaussianSplatURPFeature.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianUtils.cs">
-      <Link>Runtime\GaussianUtils.cs</Link>
-    </Compile>
-    <Compile Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatHDRPPass.cs">
-      <Link>Runtime\GaussianSplatHDRPPass.cs</Link>
-    </Compile>
+    <Compile Include="Packages\package\Runtime\GaussianSplatRuntimeAsset.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\GaussianFileReader.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\SPZFileReader.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\TinyJsonParser.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\GaussianSplatAssetCreateTask.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianSplatAsset.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\Quality.cs" />
+    <Compile Include="Packages\package\Runtime\GpuSorting.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianSplatRenderer.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\KMeansClustering.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianSplatRuntimeAssetCreator.cs" />
+    <Compile Include="Packages\package\Runtime\Utils\PLYFileReader.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianCutout.cs" />
+    <Compile Include="Packages\package\Runtime\IGaussianSplatAsset.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianSplatURPFeature.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianUtils.cs" />
+    <Compile Include="Packages\package\Runtime\GaussianSplatHDRPPass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\stu\praca magisterska\UnityGaussianSplatting-main\package\Runtime\GaussianSplatting.asmdef">
-      <Link>Runtime\GaussianSplatting.asmdef</Link>
-    </None>
+    <None Include="Packages\package\Runtime\GaussianSplatting.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

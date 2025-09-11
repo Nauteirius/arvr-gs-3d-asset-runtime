@@ -1,0 +1,11 @@
+GaussianExample/[Ll]ibrary/
+GaussianExample/[Tt]emp/
+GaussianExample/[Oo]bj/
+GaussianExample/[Bb]uild*/
+GaussianExample/[Ll]ogs/
+GaussianExample/[Mm]emoryCaptures/
+GaussianExample/UserSettings/
+GaussianExample/*.csproj
+GaussianExample/*.sln
+GaussianExample/*.unitypackage
+GaussianExample/*.zip

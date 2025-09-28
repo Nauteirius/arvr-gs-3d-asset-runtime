@@ -1,4 +1,5 @@
 import numpy as np
+import os
 from plyfile import PlyData, PlyElement
 
 unity_assets_folder = os.getenv("PIPE_UNITY_ASSETS_FOLDER", "")

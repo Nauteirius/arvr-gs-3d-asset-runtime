@@ -23,15 +23,16 @@ def ENV(name: str, default: str) -> str:
 # --- Base config  ---
 input_folder = ENV("PIPE_INPUT_FOLDER", "")
 new_input_name = ENV("PIPE_NEW_INPUT_NAME", "")
-wsl_env = ENV("PIPE_WSL_ENV", "")
-wsl_script = ENV("PIPE_WSL_SCRIPT", "")
-output_folder_wsl = ENV("PIPE_OUTPUT_FOLDER_WSL", "")
+linux_env = ENV("PIPE_LINUX_ENV", "")
+trellis_script = ENV("PIPE_TRELLIS_SCRIPT", "")
+output_folder = ENV("PIPE_OUTPUT_FOLDER", "")
 trellis_assets_folder = ENV("PIPE_TRELLIS_ASSETS_FOLDER", "")
 unity_assets_folder = ENV("PIPE_UNITY_ASSETS_FOLDER", "")
 conda_profile = ENV("PIPE_CONDA_PROFILE", "")
 # Derived config (depends on values defined via env variables in the main config section)
 #script_dir = os.path.dirname(os.path.abspath(__file__))
-ply_converter_script = os.path.join(PIPE_UNITY_ASSETS_FOLDER, "ply_converter.py")
+
+ply_converter_script = os.path.join(".", "ply_converter.py")
 converter_output_name = ENV("PIPE_CONVERTER_OUTPUT_NAME", "output.ply")
 
 # How often (in seconds) the script checks for new files
@@ -183,19 +184,19 @@ def main():
 
     print("🚀 Running 3D reconstruction in WSL...")
     run_wsl_process(
-        f"cd /mnt/c/models/TRELLIS && "
+        f"cd {output_folder} && "
         f"source {conda_profile} && "
-        f"conda activate {wsl_env} && "
-        f"python {wsl_script}"
+        f"conda activate {linux_env} && "
+        f"python {trellis_script}"
     )
 
     print("⏳ Waiting for 3D output file (Gaussian Splatting)...")
-    output_file = wait_for_output_file(output_folder_wsl)
+    output_file = wait_for_output_file(output_folder)
     print(f"📦 3D file generated: {output_file}")
 
     print("📤 Moving 3D model to Unity...")
     transfer_file_from_wsl(
-        os.path.join(output_folder_wsl, output_file),
+        os.path.join(output_folder, output_file),
         unity_assets_folder
     )
     print("✅ Model moved to Unity assets folder.")

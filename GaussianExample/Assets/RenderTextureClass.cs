@@ -36,7 +36,7 @@ public class RenderTextureClass : MonoBehaviour
         byte[] bytes;
         bytes = tex.EncodeToPNG();
 
-        string path = "C:\\stu\\praca magisterska\\screenshots\\screenshot.png"; // //AssetDatabase.GetAssetPath(rt) + ".png";
+        string path = Path.Combine(Application.dataPath, "screenshot.png"); // //AssetDatabase.GetAssetPath(rt) + ".png";
     
         System.IO.File.WriteAllBytes(path, bytes);
         AssetDatabase.ImportAsset(path);

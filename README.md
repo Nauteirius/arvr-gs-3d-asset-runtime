@@ -29,12 +29,12 @@ The camera captures the cropped user view, which is then converted into a 3D Gau
 
 ```mermaid
 flowchart LR
-  A[\"Unity (VR/AR) Capture Camera\nPNG screenshot\"] -->|writes file| B[Watcher (Python script)]
+  A[Unity - Capture Camera PNG] -->|writes file| B[Watcher (Python)]
   B -->|debounce/verify| C[Pass to TRELLIS]
   C -->|decode image→3D| D[Gaussians (.ply)]
   D --> E[RGB→SH repack]
-  E -->|move into Assets/| F[Unity Runtime Hot-Reload]
-  F --> G[Spawn GaussianSplatAsset in front of player]
+  E -->|move into Assets/| F[Unity Hot-Reload]
+  F --> G[Spawn GaussianSplatAsset]
 ```
 
 

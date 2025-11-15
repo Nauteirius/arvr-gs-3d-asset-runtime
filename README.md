@@ -27,15 +27,13 @@ The camera captures the cropped user view, which is then converted into a 3D Gau
 
 **One‑line:** Take a single in‑engine screenshot → generate a 3D Gaussian Splatting asset → hot‑reload it into Unity at runtime.
 
-```mermaid
 flowchart LR
-  A[Unity (VR/AR) • Capture Camera\nPNG screenshot] -->|writes file| B[Watcher (Python script)]
+  A[\"Unity (VR/AR) Capture Camera\nPNG screenshot\"] -->|writes file| B[Watcher (Python script)]
   B -->|debounce/verify| C[Pass to TRELLIS]
   C -->|decode image→3D| D[Gaussians (.ply)]
-  D --> E[RGB→SH repack\n]
-  E -->|move into Assets/| F[Unity Runtime Hot‑Reload]
+  D --> E[RGB→SH repack]
+  E -->|move into Assets/| F[Unity Runtime Hot-Reload]
   F --> G[Spawn GaussianSplatAsset in front of player]
-```
 
 
 ## Repository layout
@@ -72,43 +70,9 @@ Clone:
 
 Place them side‑by‑side or adapt paths in `.env` accordingly.
 
-### 2) Create the `.env` (copy from `.example.env` and fill in your real paths
+### 2) Create the `.env` (copy from `.example.env` template and fill in your real paths)
 
-Paste your **real paths** as values:
 
-```ini
-# --- pipeline settings ---
-
-# Where VR screenshots appear
-PIPE_INPUT_FOLDER=...\screenshots
-
-# File name to rename the screenshot (fixed name the generator reads)
-PIPE_NEW_INPUT_NAME=input.png
-
-# WSL/Linux environment (Conda env name)
-PIPE_LINUX_ENV=trellis
-
-# Path to the TRELLIS script (WSL path)
-PIPE_TRELLIS_SCRIPT=.../TRELLIS/example_ply.py
-
-# Where TRELLIS writes its outputs by default (WSL path)
-PIPE_OUTPUT_FOLDER=.../TRELLIS/
-
-# Assets folder for TRELLIS inputs (Windows path mirrored in WSL)
-PIPE_TRELLIS_ASSETS_FOLDER=...\TRELLIS\assets
-
-# Unity assets folder (Windows path)
-PIPE_UNITY_ASSETS_FOLDER=...\UnityGaussianSplatting\projects\GaussianExample\Assets
-
-# Output name after converter (Windows path destination file name)
-PIPE_CONVERTER_OUTPUT_NAME=output.ply
-
-# Conda profile (WSL path)
-PIPE_CONDA_PROFILE=.../etc/profile.d/conda.sh
-
-# Polling interval (seconds)
-PIPE_POLL_INTERVAL_SEC=2
-```
 
 **Notes:**
 
@@ -147,16 +111,6 @@ Edit your TRELLIS entry script (e.g., `example_ply.py`) so it loads the input im
    ```
 2. Open `UnityGaussianSplatting/projects/GaussianExample` in **Unity 2022.3.47f1**, enable VR, and **enter Play Mode**.
 3. In VR, use the auxiliary camera to frame the region of interest and take a screenshot.
-4. The watcher will:
-
-   1. detect the finished file and copy/rename it to
-      `PIPE_TRELLIS_ASSETS_FOLDER\PIPE_NEW_INPUT_NAME`
-   2. invoke TRELLIS under WSL/Conda
-      (`PIPE_TRELLIS_SCRIPT` in `PIPE_LINUX_ENV`),
-   3. wait for the Gaussian `.ply` in `PIPE_OUTPUT_FOLDER`, then move it to
-      `PIPE_UNITY_ASSETS_FOLDER`,
-   4. run the RGB→SH3 repacking (writes `PIPE_CONVERTER_OUTPUT_NAME` in `PIPE_UNITY_ASSETS_FOLDER`),
-   5. touch a small trigger file so Unity hot‑reloads and spawns the object.
 
 ### 6) Where each value is used (consistency map)
 
@@ -169,7 +123,7 @@ Edit your TRELLIS entry script (e.g., `example_ply.py`) so it loads the input im
 
 ---
 
-## VR interaction cheatsheet (Quest 2 default)
+## VR interaction key mapping (Quest 2 default)
 
 | Controller | Control     | Action                                         |
 | ---------- | ----------- | ---------------------------------------------- |
@@ -193,7 +147,7 @@ Edit your TRELLIS entry script (e.g., `example_ply.py`) so it loads the input im
 ---
 ## Tested on
 
-* **OS:** Windows 11 with **WSL2** (Ubuntu 22.04)
+* **OS:** Windows 11 with WSL2 (Ubuntu 22.04)
 * **Unity:** 2022.3.47f1
 * **Headset:** Meta Quest 2
 * **Python (Windows):** 3.10+

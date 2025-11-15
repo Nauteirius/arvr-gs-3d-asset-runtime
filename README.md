@@ -28,13 +28,13 @@ The camera captures the cropped user view, which is then converted into a 3D Gau
 **One‑line:** Take a single in‑engine screenshot → generate a 3D Gaussian Splatting asset → hot‑reload it into Unity at runtime.
 
 ```mermaid
-flowchart LR
-  A[Unity - Capture Camera PNG] -->|writes file| B[Watcher (Python)]
-  B -->|debounce/verify| C[Pass to TRELLIS]
-  C -->|decode image→3D| D[Gaussians (.ply)]
-  D --> E[RGB→SH repack]
-  E -->|move into Assets/| F[Unity Hot-Reload]
-  F --> G[Spawn GaussianSplatAsset]
+graph LR
+    A[Unity Capture] -->|writes file| B[Python Watcher]
+    B -->|debounce| C[Pass to TRELLIS]
+    C -->|decode to 3D| D[Gaussians .ply]
+    D --> E[RGB to SH repack]
+    E -->|move to Assets| F[Runtime Hot-Reload]
+    F --> G[Spawn GaussianSplatAsset]
 ```
 
 
